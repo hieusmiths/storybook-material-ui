@@ -8,33 +8,12 @@
     "type": "git",
     "url": "https://github.com/alexpanov/storybook-addon-material-ui.git"
   },
-  "keywords": [
-    "storybook-addons",
-    "style",
-    "debug",
-    "storybook",
-    "react",
-    "material",
-    "ui",
-    "material-ui",
-    "material-ui-5",
-    "mui-5",
-    "mui5",
-    "addon",
-    "decorator",
-    "theme",
-    "editor",
-    "customization",
-    "dark theme",
-    "light theme",
-    "storybook-addon"
-  ],
-  "storybook": {
-    "displayName": "Material-UI 5",
-    "supportedFrameworks": [
-      "React"
-    ],
-    "icon": "https://raw.githubusercontent.com/alexpanov/storybook-addon-material-ui/master/docs/logos/material-ui.png"
+  "scripts": {
+    "start": "start-storybook -p 9001",
+    "build-storybook": "build-storybook -s public",
+    "deploy": "node .scripts/deployer",
+    "prepare": "node .scripts/npm-prepare.js",
+    "postpublish": "node .scripts/npm-postpublish.js"
   },
   "license": "MIT",
   "bugs": {
@@ -50,13 +29,6 @@
     "global": "^4.3.2",
     "js-beautify": "^1.8.9",
     "react-inspector": "^2.3.1"
-  },
-  "scripts": {
-    "start": "start-storybook -p 9001",
-    "build-storybook": "build-storybook -s public",
-    "deploy": "node .scripts/deployer",
-    "prepare": "node .scripts/npm-prepare.js",
-    "postpublish": "node .scripts/npm-postpublish.js"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
@@ -101,5 +73,33 @@
     "prop-types": "^15.5.8",
     "react": ">=17.0.0",
     "react-dom": ">=17.0.0"
+  },
+  "keywords": [
+    "storybook-addons",
+    "style",
+    "debug",
+    "storybook",
+    "react",
+    "material",
+    "ui",
+    "material-ui",
+    "material-ui-5",
+    "mui-5",
+    "mui5",
+    "addon",
+    "decorator",
+    "theme",
+    "editor",
+    "customization",
+    "dark theme",
+    "light theme",
+    "storybook-addon"
+  ],
+  "storybook": {
+    "displayName": "Material-UI 5",
+    "supportedFrameworks": [
+      "React"
+    ],
+    "icon": "https://raw.githubusercontent.com/alexpanov/storybook-addon-material-ui/master/docs/logos/material-ui.png"
   }
 }
