@@ -1,5 +1,5 @@
 {
-  "name": "storybook-addon-material-ui",
+  "name": "storybook-material-ui",
   "version": "0.0.1",
   "description": "Storybook Addon for Material UI 5 Library",
   "main": "dist/index.js",
