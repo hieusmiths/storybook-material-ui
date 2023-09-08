@@ -9,7 +9,7 @@
     "url": "https://github.com/hieusmiths/storybook-material-ui"
   },
   "scripts": {
-    "start": "start-storybook -p 9001",
+    "start": "storybook dev -p 9001",
     "build-storybook": "build-storybook -s public",
     "deploy": "node .scripts/deployer",
     "prepare": "node .scripts/npm-prepare.js",
